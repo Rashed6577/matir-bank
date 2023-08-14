@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matir Bank</title>
+    <link rel="shortcut icon" href="image/images.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center my-5">Let's get some <span class="font-semibold text-sky-800">Money</span>!!!
+        </h1>
+    </header>
+    <main>
+        <section class="bg-green-200 mt-10">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white pt-10">
+                <div class="bg-emerald-300 rounded-lg p-8">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-4xl">$<span id="depo-amount">00</span></h2>
+                </div>
+                <div class="bg-purple-300 rounded-lg p-8">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-4xl">$<span id="with-amount">00</span></h2>
+                </div>
+                <div class="bg-red-300 rounded-lg p-8">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-4xl">$<span id="balance-amount">1240</span></h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto py-10">
+                <div class="bg-emerald-300  rounded-lg p-8">
+                    <h3 class="text-3xl text-white">Please Deposit</h3>
+                    <input class="w-3/4 block my-4 px-2 rounded" type="text" name="" id="depo-input" placeholder="$ Amount you want too deposit">
+                    <button id="depo-btn" class="bg-amber-600 px-6 py-2 rounded-lg font-medium text-white hover:bg-amber-700">Deposit</button>
+                </div>
+                <div class="bg-purple-300  rounded-lg p-8">
+                    <h3 class="text-3xl text-white">Please Withdraw</h3>
+                    <input class="w-3/4 block my-4 px-2 rounded" type="text" name="" id="with-input" placeholder="$ Amount you want too withdraw">
+                    <button id="with-btn" class="bg-amber-600 px-6 py-2 rounded-lg font-medium text-white hover:bg-amber-700">Withdraw</button>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <script src="js/depo.js"></script>
+    \<script src="js/with.js"></script>
+</body>
+
+</html>
