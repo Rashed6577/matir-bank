@@ -1,7 +1,10 @@
 document.getElementById('depo-btn').addEventListener('click', function(){
     const depoInput = document.getElementById('depo-input');
     const depo = depoInput.value;
-
+    if(isNaN(parseFloat(depo))){
+        alert('Please provide a valid amount');
+        return;
+    }
 
     const depoAmount = document.getElementById('depo-amount');
     const depoTotal = depoAmount.innerText;
